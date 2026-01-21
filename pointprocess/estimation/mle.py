@@ -4,16 +4,16 @@ from pointprocess.estimation.likelihoods.pl import hawkes_pl_loglik
 from pointprocess.estimation.likelihoods.multiexp import hawkes_multiexp_loglik
 import numpy as np
 from sklearn.mixture import GaussianMixture
-
+from pointprocess.utils.io import plot_bic_distrib
 
 def estimate_betas_gmm(
     event_times,
-    n_components=None,        # ← auto si None
+    n_components=None,    
     J_max=6,
     min_intervals=200,
     random_state=42,
     sort_desc=True,
-    criterion="bic",          # "aic" ou "bic"
+    criterion="bic",          # "aic" or "bic"
 ):
 
     t = np.asarray(event_times, dtype=float)
@@ -25,7 +25,6 @@ def estimate_betas_gmm(
 
     log_dt = np.log(dt).reshape(-1, 1)
 
-    # 🔹 Sélection du nombre de composantes
     if n_components is None:
         scores = []
         models = []
@@ -62,7 +61,6 @@ def estimate_betas_gmm(
         scores = None
         
 
-    # 🔹 Extraction des betas
     log_means = gmm.means_.reshape(-1)
     taus = np.exp(log_means)
     betas = 1.0 / taus
@@ -97,12 +95,10 @@ def estimate_betas_gmm(
 def fit_hawkes(events, T, H0, x0=None, plot=False, J=None):
     events = np.asarray(events, float)
     n = events.size
-    
-    # precompute expensive terms ONCE
+
     dt = np.diff(events) if n > 1 else np.zeros(1)
     tail = T - events
 
-    # ---- EXPONENTIAL ----
     if H0 == "exp":
         if x0 is None:
             x0 = np.array([0.5, 0.8, 1.0])
@@ -145,33 +141,20 @@ def fit_hawkes(events, T, H0, x0=None, plot=False, J=None):
             return -hawkes_multiexp_loglik(mu, alphas, betas, events, T, dt, tail)
     
     elif H0 == "multiexp_fixed_betas":
-        betas_fixed, info = estimate_betas_gmm(events, n_components=3)
-        # betas_fixed = np.array([217510, 765, 0.242])
-        
+        betas_fixed, info = estimate_betas_gmm(events, n_components=3)              # Important : choose if you fix the betas or estimate them
+        # betas_fixed = np.array([216459,  766,  0.24])
+
         if plot:
-            from pointprocess.utils.io import plot_interarrival_distribution, plot_bic, plot_gmm_interarrival_counts, annotate_gmm_weights
-            import matplotlib.pyplot as plt
-            fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-            plot_bic(info["scores"], info["J_max"], info["criterion"], ax=axes[0])
-            plot_interarrival_distribution(events, ax=axes[1])
-            # Récupérer les bins réellement utilisés
-            inter = np.diff(events)
-            inter = inter[inter > 0]
-            bins = np.logspace(np.log10(inter.min()), np.log10(inter.max()), 80)
-            annotate_gmm_weights(events, info["gmm"], bins=bins, ax=axes[1])
-            # GMM en counts
-            plot_gmm_interarrival_counts(events, gmm=info["gmm"], bins=bins, ax=axes[1], plot_components=True, plot_total=False)
-            plt.tight_layout()
-            plt.show()
+            plot_bic_distrib(events, info)
 
         if x0 is None:
             mu0 = 0.5
-            alpha0 = np.full(3, 0.5/3)
+            alpha0 = np.full(J, 0.5/J)
             x0 = np.concatenate(([mu0], alpha0))
         
-        bounds = [(1e-8,None)] + [(0,None)]*3
+        bounds = [(1e-8,None)] + [(0,None)]*J
         
-        alpha_idx = slice(1, 1+3)
+        alpha_idx = slice(1, 1+J)
         betas_fixed = betas_fixed
         
         def obj(p):

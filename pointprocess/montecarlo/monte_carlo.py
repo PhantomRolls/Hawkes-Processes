@@ -19,7 +19,6 @@ def monte_carlo_simulation(M, process_generator,
     ks_rej = ad_rej = cvm_rej = 0
 
     t0 = time.perf_counter()
-    all_betas = []
     for m in range(M):
 
         events = process_generator(process_params).events
@@ -35,15 +34,9 @@ def monte_carlo_simulation(M, process_generator,
         ks_rej += ks_r
         ad_rej += ad_r
         cvm_rej += cvm_r
-        
-        betas = estimated_params["betas"]
-        all_betas.append(betas)
-        
+
         if (m + 1) % 10 == 0:
             print(f"{m+1}/{M}")
-
-    medians = np.median(all_betas, axis=0)
-    print(medians)
     t1 = time.perf_counter()
 
     result = {

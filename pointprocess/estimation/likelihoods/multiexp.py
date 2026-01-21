@@ -12,7 +12,6 @@ def hawkes_multiexp_loglik(mu, alphas, betas, events, T, dt, tail):
     if n == 0:
         return -mu * T
     
-    # R recursion: shape (J, n)
     R = np.zeros((J, n))
     
     for j in range(J):
@@ -23,14 +22,13 @@ def hawkes_multiexp_loglik(mu, alphas, betas, events, T, dt, tail):
     for k in range(n):
         lam = mu
         for j in range(J):
-            lam += alphas[j] * R[j, k]   # <-- correction importante
+            lam += alphas[j] * R[j, k]
         
         if lam <= 0:
             return -1e20
         
         lam_log_sum += np.log(lam)
     
-    # Integral
     integral = mu * T
     for j in range(J):
         integral += (alphas[j] / betas[j]) * np.sum(1 - np.exp(-betas[j] * tail))

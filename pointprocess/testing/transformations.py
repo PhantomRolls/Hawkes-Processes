@@ -48,14 +48,6 @@ def build_eta_on_grid(events, estimated_params, T, grid_u, H0):
 
 
 def transform_T_eta_univariate(eta_grid, grid_u, mean_intensity):
-    """
-    Univariate Khmaladze transform:
-
-    Ŵ(u) = ( η(u) - ∫₀ᵘ [η(1) - η(v)]/(1-v) dv ) / sqrt(mean_intensity)
-
-    mean_intensity = N(T)/T
-    """
-
     eta_grid = np.asarray(eta_grid, float)
     grid_u   = np.asarray(grid_u, float)
 

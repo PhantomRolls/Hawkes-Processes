@@ -31,7 +31,6 @@ def hawkes_pl_loglik(mu, alpha, beta, events, T, L, tail):
         
         lam_log_sum += np.log(lam)
     
-    # Integral part
     integral = mu * T + (alpha / beta) * np.sum(1.0 - (1.0 + tail) ** (-beta))
     
     return lam_log_sum - integral

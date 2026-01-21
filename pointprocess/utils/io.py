@@ -7,6 +7,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import json
 
+plt.rcParams.update({
+                "font.family": "serif",
+                "font.size": 9,
+                "axes.titlesize": 9,
+                "axes.labelsize": 9,
+                "legend.fontsize": 8,
+                "xtick.labelsize": 8,
+                "ytick.labelsize": 8,
+                "axes.linewidth": 0.8,
+            })
+
 def load_config(path="config.yaml"):
         with open(path, "r") as f:
             return yaml.safe_load(f)
@@ -87,6 +98,83 @@ def save_params_json(key, params, json_path):
     with open(json_path, "w") as f:
         json.dump(data, f, indent=2)
         
+def plot_counting_process(events, T=None, start_hour=9):
+    events = np.sort(np.asarray(events))
+
+    if events.size == 0:
+        raise ValueError("events is empty")
+
+    if T is None:
+        T = events[-1]
+
+    events = events[events <= T]
+
+    # Step function
+    x = np.concatenate(([0.0], events, [T]))
+    y = np.concatenate(([0], np.arange(1, len(events) + 1), [len(events)]))
+
+    # Convert seconds to hours of day
+    x_hours = start_hour + x / 3600.0
+
+    plt.figure(figsize=(6.8, 2.6))
+    plt.step(
+        x_hours, y,
+        where="post",
+        color="black",
+        linewidth=1.2
+    )
+
+    plt.ylabel("$N(t)$")
+
+    # Nice hour ticks
+    hour_min = np.floor(x_hours.min())
+    hour_max = np.ceil(x_hours.max())
+    plt.xticks(
+        np.arange(hour_min, hour_max + 1),
+        [f"{int(h):02d}:00" for h in range(int(hour_min), int(hour_max) + 1)]
+    )
+
+    plt.tick_params(axis="both", labelsize=8)
+    plt.tight_layout(pad=0.4)
+    plt.show()
+
+def plot_multiple_days(list_of_events, T=None, start_hour=9):
+    plt.figure(figsize=(6.8, 2.6))
+
+    grays = ["black", "gray",  "silver"]
+    linestyles = ["-", "--", ":", "-."]
+    n = len(list_of_events)
+
+    for i, events in enumerate(list_of_events):
+        events = np.sort(np.asarray(events))
+
+        if T is None:
+            T_use = events[-1]
+        else:
+            T_use = T
+
+        x = np.concatenate(([0], events, [T_use]))
+        y = np.concatenate(([0], np.arange(1, len(events) + 1), [len(events)]))
+        x_hours = start_hour + x / 3600.
+
+        color = grays[i % len(grays)]
+        style = linestyles[(i // len(grays)) % len(linestyles)]
+
+        plt.step(x_hours, y, where="post", linewidth=1.2,
+                 color=color, linestyle=style)
+
+    plt.ylabel("$N(t)$")
+    hour_min = start_hour
+    hour_max = np.floor(start_hour + T_use/3600.)
+
+    plt.xticks(
+        np.arange(hour_min, hour_max+1),
+        [f"{int(h):02d}:00" for h in range(int(hour_min), int(hour_max+1))]
+    )
+
+    plt.tight_layout()
+    plt.show()
+
 
 def plot_two_counting_processes(events1, events2, T=None):
     events1 = np.sort(np.asarray(events1))
@@ -95,7 +183,6 @@ def plot_two_counting_processes(events1, events2, T=None):
     if T is None:
         T = max(events1.max(), events2.max())
 
-    # Construire N(t) pour chaque processus
     times = np.linspace(0, T, 1000)
 
     N1 = np.searchsorted(events1, times, side="right")
@@ -109,7 +196,6 @@ def plot_two_counting_processes(events1, events2, T=None):
     plt.ylabel("N(t)")
     plt.title("Counting processes N1(t) and N2(t)")
     plt.legend()
-    plt.grid(True)
     plt.tight_layout()
     plt.show() 
 
@@ -118,11 +204,9 @@ def plot_interarrival_distribution(events_real, bins=50, density=False, logx=Tru
 
     inter = np.diff(events)
 
-    # Empêche les valeurs <= 0 pour le log
     inter_pos = inter[inter > 0]
 
     if logx:
-        # Bins log-spaced
         min_i = inter_pos.min()
         max_i = inter_pos.max()
         log_bins = np.logspace(np.log10(min_i), np.log10(max_i), bins)
@@ -130,26 +214,29 @@ def plot_interarrival_distribution(events_real, bins=50, density=False, logx=Tru
     else:
         used_bins = bins
 
-    # Tracé
     if ax is None:
         ax = plt.gca()
-    ax.hist(inter_pos, bins=used_bins, density=density, edgecolor='k', alpha=0.7)
+    ax.hist(inter_pos, bins=used_bins, density=density, color='0.7', edgecolor='0.2', linewidth=0.3)
     if logx:
         ax.set_xscale("log")
     ax.set_xlabel("Inter-Arrival Time" + (" (log)" if logx else ""))
     ax.set_ylabel("Density" if density else "Frequency")
-    ax.set_title("Distribution of Inter-Arrival Times")
-    ax.grid(True, alpha=0.3)
 
 
 def plot_bic(scores, J_max, criterion, ax=None):
         import matplotlib.pyplot as plt
         if ax is None:
             ax = plt.gca()
-        ax.plot(range(1, J_max + 1), scores, marker="o")
+        ax.plot(
+            range(1, J_max + 1),
+            scores,
+            lw=0.9,
+            marker='o',
+            ms=2.8,
+            color="k"  
+        )
         ax.set_xlabel("Number of Components")
         ax.set_ylabel(criterion.upper())
-        ax.set_title("Selection of the Number of GMM Components")
 
 
 from scipy.stats import lognorm
@@ -157,9 +244,9 @@ from scipy.stats import lognorm
 def plot_gmm_interarrival_counts(
     events_real,
     gmm,
-    bins,
+    bins=None,
     ax=None,
-    plot_components=True,
+    plot_components=False,
     plot_total=True,
 ):
     events = np.asarray(events_real)
@@ -168,8 +255,12 @@ def plot_gmm_interarrival_counts(
 
     if ax is None:
         ax = plt.gca()
+        
+    if bins is None:
+        inter = np.diff(events)
+        inter = inter[inter > 0]
+        bins = np.logspace(np.log10(inter.min()), np.log10(inter.max()), 80)
 
-    # Recréer EXACTEMENT les mêmes bins que l'histogramme
     bin_edges = bins if np.ndim(bins) > 0 else np.histogram_bin_edges(inter, bins=bins)
 
     N = len(inter)
@@ -194,19 +285,32 @@ def plot_gmm_interarrival_counts(
                 counts,
                 where="post",
                 lw=2,
-                label=f"Comp {j+1} | τ={np.exp(mu):.2e}"
+                label=f"Comp {j+1} | τ={np.exp(mu):.2e}",
+                color="red",
+                alpha=1
             )
 
     if plot_total:
-        ax.step(
-            bin_edges[:-1],
-            counts_total,
-            where="post",
-            lw=2.5,
+        bin_centers = np.sqrt(bin_edges[:-1] * bin_edges[1:])
+        x = np.logspace(np.log10(bin_edges[0]), np.log10(bin_edges[-1]), 2000)
+        y = np.interp(np.log10(x), np.log10(bin_centers), counts_total)
+        ax.plot(
+            x,
+            y,
+            lw=1.2,
             color="k",
-            linestyle="--",
             label="GMM total"
         )
+
+        # ax.step(
+        #     bin_edges[:-1],
+        #     counts_total,
+        #     where="post",
+        #     lw=2.5,
+        #     color="red",
+        #     linestyle="-",
+        #     label="GMM total"
+        # )
 
 
 
@@ -215,19 +319,24 @@ from scipy.stats import lognorm
 def annotate_gmm_weights(
     events_real,
     gmm,
-    bins,
     ax,
-    fontsize=10,
-    alpha=0.75,
-    y_mult=1.10,          # combien au-dessus du pic
-    stack_mult=1.18,      # empilement si collision (même bin)
-    min_weight=0.0        # ex: 0.03 pour ignorer petits poids
+    bins=None,
+    fontsize=7.5,
+    alpha=0.9,
+    y_mult=1.10,        
+    stack_mult=1.18,  
+    min_weight=0.0    
 ):
     events = np.asarray(events_real)
     inter = np.diff(events)
     inter = inter[inter > 0]
     N = len(inter)
 
+    if bins is None:
+        inter = np.diff(events)
+        inter = inter[inter > 0]
+        bins = np.logspace(np.log10(inter.min()), np.log10(inter.max()), 80)
+        
     bin_edges = np.asarray(bins, dtype=float)
     if bin_edges.ndim == 0:
         bin_edges = np.histogram_bin_edges(inter, bins=bins)
@@ -265,7 +374,7 @@ def annotate_gmm_weights(
         ax.text(
             x_peak,
             y,
-            f"$w_{j+1}={w:.2f}$",
+            fr"$\pi_{j+1}={w:.2f}$",
             ha="center",
             va="bottom",
             fontsize=fontsize,
@@ -273,22 +382,58 @@ def annotate_gmm_weights(
             bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.45)
         )
 
+def plot_bic_distrib(events, info):
+        fig, axes = plt.subplots(1, 2, figsize=(6.8, 2.8))
+        fig.subplots_adjust(top=0.88, bottom=0.20, wspace=0.45)
+        plot_bic(info["scores"], info["J_max"], info["criterion"], ax=axes[0])
+        plot_interarrival_distribution(events, ax=axes[1])
+        annotate_gmm_weights(events, info["gmm"], ax=axes[1])
+        plot_gmm_interarrival_counts(events, gmm=info["gmm"], ax=axes[1], plot_components=False, plot_total=True)
+
+        plt.show()
+        
 def qq_plot(x):
     import scipy.stats as stats
+
+    x = np.asarray(x)
+    x = x[np.isfinite(x)]
     n = len(x)
-    q = stats.expon.ppf((np.arange(1, n+1) - 0.5) / n)
-    x_exp = np.random.exponential(scale=1.0, size=len(x))
-    plt.scatter(q, np.sort(x), s=12, alpha=0.6, label="x")
-    plt.scatter(q, np.sort(x_exp), s=12, alpha=0.6, label="Exp(1)")
 
-    # VRAIE droite de référence
-    plt.plot(q, q, "r-", lw=2, label="y = x (Exp(1))")
+    # Quantiles théoriques Exp(1)
+    q_theo = stats.expon.ppf((np.arange(1, n + 1) - 0.5) / n)
 
-    plt.xlabel("Quantiles théoriques Exp(1)")
-    plt.ylabel("Quantiles empiriques")
-    plt.legend()
+    # Quantiles empiriques
+    q_emp = np.sort(x)
+
+    plt.figure(figsize=(3.2, 3.0))
+
+    # Points empiriques
+    plt.scatter(
+        q_theo,
+        q_emp,
+        s=14,
+        facecolors="none",
+        edgecolors="black",
+        linewidths=0.7,
+        label="Transformed inter-arrival times"
+    )
+
+    # Droite de référence
+    plt.plot(
+        q_theo,
+        q_theo,
+        linestyle="-",
+        color="black",
+        linewidth=1.5,
+        label="Reference line: Exp(1)"
+    )
+
+    plt.xlabel("Theoretical quantiles of Exp(1)")
+    plt.ylabel("Empirical quantiles")
+
     plt.tight_layout()
     plt.show()
+
     
     
 
@@ -346,79 +491,158 @@ def result_table(path, value, log=True):
 
 def analyze_table(df):    
     if df.attrs["name"] == "beta0" or df.attrs["name"] == "beta1" or df.attrs["name"] == "beta2":
-        fig, axes = plt.subplots(3, 1, figsize=(8, 8))
+        fig, axes = plt.subplots(1, 1, figsize=(6.8, 2.0))
         print(df)
-        print("Mean :", df.stack().mean(), " | ", np.exp(df.stack().mean()),np.exp(df.stack()).mean())
-        df.mean(axis=0).plot(ax=axes[0])
-        axes[0].set_title("Daily Average Log(Beta)")
-        axes[0].set_ylabel("Beta")
-        axes[0].set_xlabel("Date")
-
-        df.T.plot(ax=axes[1], legend=False)
-        axes[1].set_title("Hourly Log(Beta) Values")
-        axes[1].set_ylabel("Beta")
-        axes[1].set_xlabel("Date")
+        median = df.stack().median()
+        print("Median :", median, " | ", np.exp(df.stack().median()))
+        # df.mean(axis=0).plot(ax=axes[0], label="mean")
+        # df.median(axis=0).plot(ax=axes[0], label="median")
+        # axes[0].set_title("Daily Average Log(Beta)")
+        # axes[0].set_ylabel("Beta")
+        # axes[0].set_xlabel("Date")
+        # axes[0].legend()
         
-        df.T.boxplot(ax=axes[2])
-        axes[2].set_title("Hourly Log(Beta) Dispersion")
-        axes[2].set_ylabel("Beta")
+        df_plot = df.T.copy()
+        dates = pd.to_datetime(df_plot.index)
 
-        labels = [str(h).split(":")[0] for h in df.index]
+        # positions entières
+        x = np.arange(len(dates))
 
-        axes[2].set_xticks(range(1, len(labels) + 1))
-        axes[2].set_xticklabels(labels, rotation=90)
+        # plot avec positions
+        axes.plot(x, df_plot.values, color="0.5", alpha=0.6, linewidth=1.0)
+        axes.plot(x, df_plot.median(axis=1).values, color="black", linewidth=2.0)
 
+        # labels EXACTEMENT ceux du df
+        labels = dates.strftime("%m-%d")
+        axes.set_xticks(x)
+        axes.set_xticklabels(labels)
+
+        axes.set_ylabel(r"$\log(\beta_0)$")
+        axes.set_xlabel(None)
 
         plt.tight_layout()
         plt.show()
+
+
+
     
+        # df.T.boxplot(ax=axes[2])
+        # axes[2].set_title("Hourly Log(Beta) Dispersion")
+        # axes[2].set_ylabel("Beta")
+        
+
+        # labels = [str(h).split(":")[0] for h in df.index]
+
+        # axes[2].set_xticks(range(1, len(labels) + 1))
+        # axes[2].set_xticklabels(labels, rotation=90)
+
     elif df.attrs["name"] == "tests":
         print(df)
         n_rejections = df.values.sum()
-        print(f"Number of rejetctions : {n_rejections} ({round(n_rejections/df.size*100,1)} %)")
+        print(f"Number of rejections: {n_rejections} "
+            f"({round(n_rejections/df.size*100,1)} %)")
 
-        from matplotlib.patches import Patch
-        fig, ax = plt.subplots(figsize=(12, 4))
-        im = ax.imshow(
+        from matplotlib.colors import ListedColormap
+        cmap = ListedColormap(["white", "0.05"])
+
+        fig, ax = plt.subplots(figsize=(6.8, 2.6))  # largeur article (2 colonnes)
+
+        ax.imshow(
             df.values,
-            cmap='gray_r',
-            aspect='auto',
-            extent=[-0.5, len(df.columns)-0.5, len(df.index)-0.5, -0.5]
+            cmap=cmap,
+            aspect="auto",
+            interpolation="nearest",
+            vmin=0,
+            vmax=1
         )
-        ax.set_xticks(np.arange(len(df.columns)))
-        ax.set_xticklabels(df.columns, rotation=45, ha='right')
 
+        # --- Axes
+        ax.set_xlabel("Day")
+        ax.set_ylabel("Testing window")
+
+        ax.set_xticks(np.arange(len(df.columns)))
+        ax.set_xticklabels(df.columns, rotation=45, ha="right")
+
+        # Nettoyage des labels horaires (09:00:00-10:00:00 -> 09–10)
+        clean_windows = [
+            f"{str(h).split(':')[0]}–{str(h).split('-')[1].split(':')[0]}"
+            if isinstance(h, str) and '-' in h else str(h)
+            for h in df.index
+        ]
         ax.set_yticks(np.arange(len(df.index)))
-        ax.set_yticklabels(df.index)
-        ax.set_xticks(np.arange(-0.5, len(df.columns), 1), minor=True)
-        ax.set_yticks(np.arange(-0.5, len(df.index), 1), minor=True)
+        ax.set_yticklabels(clean_windows)
+
+        # --- Séparateurs fins entre cellules (IMPORTANT)
+        ax.set_xticks(np.arange(-0.5, df.shape[1], 1), minor=True)
+        ax.set_yticks(np.arange(-0.5, df.shape[0], 1), minor=True)
 
         ax.grid(
-            which='minor',
-            color='lightgray',
-            linestyle='-',
-            linewidth=0.7
+            which="minor",
+            color="0.8",
+            linestyle="-",
+            linewidth=0.6
         )
 
-        ax.tick_params(which='minor', bottom=False, left=False)
-
-        # Labels
-        ax.set_xlabel("Date")
-        ax.set_ylabel("Hour")
-        ax.set_title("Accepted / Rejected Schedule")
-
-        # Légende
-        legend_elements = [
-            Patch(facecolor='white', edgecolor='black', label='0 : Accepted'),
-            Patch(facecolor='black', edgecolor='black', label='1 : Rejected')
-        ]
-        ax.legend(handles=legend_elements, loc='upper right')
+        ax.tick_params(which="minor", bottom=False, left=False)
 
         plt.tight_layout()
         plt.show()
+
 
     elif df.attrs["name"] == "J" or df.attrs["name"] == "branching_ratio" or df.attrs["name"] == "branching_ratios":
         print(df)
         
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def plot_beta_stability(dfs, beta_labels=(0, 1, 2)):
+    n = len(beta_labels)
+    fig, axes = plt.subplots(
+        n, 1,
+        figsize=(6.8, 1.6 * n),
+        sharex=True
+    )
+
+    if n == 1:
+        axes = [axes]
+
+    for ax, j in zip(axes, beta_labels):
+        df = dfs[f"beta{j}"]
+
+        # transpose: index = dates
+        df_plot = df.T.copy()
+        dates = pd.to_datetime(df_plot.index)
+        x = np.arange(len(dates))
+
+        # all intraday windows
+        ax.plot(
+            x,
+            df_plot.values,
+            color="0.5",
+            alpha=0.6,
+            linewidth=1.0
+        )
+
+        # median across windows
+        ax.plot(
+            x,
+            df_plot.median(axis=1).values,
+            color="black",
+            linewidth=2.0
+        )
+
+        ax.set_ylabel(rf"$\log(\beta_{j})$")
+        ax.set_xlim(x[0], x[-1])
+
+    # x-axis labels (dates)
+    labels = dates.strftime("%m-%d")
+    axes[-1].set_xticks(x)
+    axes[-1].set_xticklabels(labels)
+
+    axes[-1].set_xlabel(None)
+
+    plt.tight_layout()
+    plt.show()
 
 

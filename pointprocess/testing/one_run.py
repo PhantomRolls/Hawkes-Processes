@@ -8,7 +8,7 @@ from pointprocess.testing.transformations import random_time_change
 
 
 def one_run(events, T, H0, method,
-            alpha_level, tau=1.0, n_for_test=None, grid_size=None, plot=False, J=None):
+            alpha_level, tau=1.0, n_for_test=None, grid_size=None, plot=False, J=1):
     
     events = np.asarray(events, float)
 

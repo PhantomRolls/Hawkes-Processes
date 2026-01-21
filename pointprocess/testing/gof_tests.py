@@ -29,8 +29,7 @@ def ad_statistic(x: np.ndarray, dist: str) -> float:
         Fi = norm.cdf(x)
 
     elif dist == "exp":
-        Fi = 1 - np.exp(-x)   # CDF Exp(1)
-
+        Fi = 1 - np.exp(-x)  
     else:
         raise ValueError("dist must be 'normal' or 'exp'")
 

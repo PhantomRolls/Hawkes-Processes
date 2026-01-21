@@ -16,7 +16,7 @@ class HawkesMultiExp(PointProcess):
 
     def simulate_cluster(self):
         J = len(self.alphas)
-        branching_ratios = self.alphas / self.betas   # α_j / β_j pour chaque j
+        branching_ratios = self.alphas / self.betas 
         poisson_h = PoissonHomogeneous({"T": self.T, "lambda": self.mu})
         frontier = deque(poisson_h.events)
 
@@ -52,7 +52,6 @@ class HawkesMultiExp(PointProcess):
         # intensité excitée pour chaque composante j
         exc = np.zeros(J)
 
-        # pointeur pour parcourir les événements
         i = 0
         n_events = len(events)
 
@@ -65,7 +64,7 @@ class HawkesMultiExp(PointProcess):
             # ajouter tous les événements qui tombent dans (t[k-1], t[k]]
             while i < n_events and events[i] <= times[k]:
                 for j in range(J):
-                    exc[j] += alphas[j]   # un "saut" α_j pour chaque événement
+                    exc[j] += alphas[j] 
                 i += 1
 
             lam[k] += exc.sum()

@@ -1,0 +1,26 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baars et~al.(2025)Baars, Can, and Laeven]{baars2025}
+J.~Baars, S.~U. Can, and R.~J.~A. Laeven.
+\newblock Asymptotically distribution-free goodness-of-fit testing for point
+  processes, 2025.
+\newblock arXiv:2503.24197.
+
+\bibitem[Hawkes and Oakes(1974)]{hawkes_oakes_1974}
+A.~G. Hawkes and D.~Oakes.
+\newblock A cluster process representation of a self-exciting process.
+\newblock \emph{Journal of Applied Probability}, 11\penalty0 (3):\penalty0
+  493--503, 1974.
+
+\bibitem[Ogata(1981)]{ogata1981}
+Y.~Ogata.
+\newblock On lewis' simulation method for point processes.
+\newblock \emph{IEEE Transactions on Information Theory}, 27\penalty0
+  (1):\penalty0 23--31, 1981.
+
+\end{thebibliography}

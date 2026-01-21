@@ -1,0 +1,3314 @@
+{
+  "2017-01-17_10:00:00-10:30:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.18411240335378498,
+      "alpha": 51032.549853103665,
+      "beta": 136858.75747293854,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3728847959414981
+    ],
+    "time_seconds": 3.2518849999996746
+  },
+  "2017-01-17_10:30:00-11:00:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1346139396069859,
+      "alpha": 7839.463274348929,
+      "beta": 15295.238734683016,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5125427206685177
+    ],
+    "time_seconds": 2.464213999999629
+  },
+  "2017-01-17_11:00:00-11:30:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.17406218644570756,
+      "alpha": 1593.0465635091034,
+      "beta": 4175.162493038463,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.38155318892744894
+    ],
+    "time_seconds": 2.4350362999994104
+  },
+  "2017-01-17_11:30:00-12:00:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.14280035703870847,
+      "alpha": 12404.614316506959,
+      "beta": 26385.82370692407,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.47012420208249117
+    ],
+    "time_seconds": 2.3436746999996103
+  },
+  "2017-01-17_12:00:00-12:30:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.20378690051439474,
+      "alpha": 11968.113330247992,
+      "beta": 28744.511660004115,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4163616857301057
+    ],
+    "time_seconds": 2.364904599999136
+  },
+  "2017-01-17_12:30:00-13:00:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2964648399550946,
+      "alpha": 14587.762485911517,
+      "beta": 27667.61949028539,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.527250365396761
+    ],
+    "time_seconds": 2.3849184999999125
+  },
+  "2017-01-17_13:00:00-13:30:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1887405190439059,
+      "alpha": 13477.714800669022,
+      "beta": 34333.777139812955,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3925497257638006
+    ],
+    "time_seconds": 2.404231099999379
+  },
+  "2017-01-17_13:30:00-14:00:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.3168450597780376,
+      "alpha": 40158.01433366699,
+      "beta": 78908.01687489077,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5089218551435377
+    ],
+    "time_seconds": 2.4239502000000357
+  },
+  "2017-01-17_14:00:00-14:30:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.18240162474789667,
+      "alpha": 13210.851970052494,
+      "beta": 23695.938325568786,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5575154606052254
+    ],
+    "time_seconds": 2.4821401000008336
+  },
+  "2017-01-17_14:30:00-15:00:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.28429773866454194,
+      "alpha": 12047.407547233772,
+      "beta": 26284.584618003082,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.45834498518124384
+    ],
+    "time_seconds": 2.758107599998766
+  },
+  "2017-01-17_15:00:00-15:30:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.21379294759012693,
+      "alpha": 9501.738238589583,
+      "beta": 20856.432010530814,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.45557831913876606
+    ],
+    "time_seconds": 2.578910899999755
+  },
+  "2017-01-17_15:30:00-16:00:00": {
+    "date": "2017-01-17",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.28382835372466714,
+      "alpha": 7621.406185838038,
+      "beta": 16811.242333856833,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.453351753218677
+    ],
+    "time_seconds": 2.4701953000003414
+  },
+  "2017-01-18_10:00:00-10:30:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1421601546169934,
+      "alpha": 6235.025321696055,
+      "beta": 18041.746977222003,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.34558877971007324
+    ],
+    "time_seconds": 1.6765371999990748
+  },
+  "2017-01-18_10:30:00-11:00:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.11426740965594176,
+      "alpha": 5477.67833944379,
+      "beta": 15117.062935716733,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.36235070018143584
+    ],
+    "time_seconds": 1.6057218999994802
+  },
+  "2017-01-18_11:00:00-11:30:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.17589758758494745,
+      "alpha": 16815.204970102935,
+      "beta": 49701.042486432205,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3383270074202827
+    ],
+    "time_seconds": 1.6689518000002863
+  },
+  "2017-01-18_11:30:00-12:00:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.14388300481992497,
+      "alpha": 8664.429506636798,
+      "beta": 22349.243610768754,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.38768334434646956
+    ],
+    "time_seconds": 1.5922171000001981
+  },
+  "2017-01-18_12:00:00-12:30:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.0778382575754598,
+      "alpha": 1298.4168091805884,
+      "beta": 3826.880599896474,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.33928856030044774
+    ],
+    "time_seconds": 1.5543895999999222
+  },
+  "2017-01-18_12:30:00-13:00:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.11977859960183887,
+      "alpha": 12270.526147939301,
+      "beta": 28990.715192535994,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.42325710374673664
+    ],
+    "time_seconds": 1.520481599998675
+  },
+  "2017-01-18_13:00:00-13:30:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.13061671461426377,
+      "alpha": 12603.234628415516,
+      "beta": 26793.26820583975,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.47038810389202784
+    ],
+    "time_seconds": 1.5149332000000868
+  },
+  "2017-01-18_13:30:00-14:00:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.12641447396452496,
+      "alpha": 1671.2468526632317,
+      "beta": 3778.717406514704,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.44227886684035056
+    ],
+    "time_seconds": 1.5483432999990328
+  },
+  "2017-01-18_14:00:00-14:30:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1392396670015913,
+      "alpha": 4643.0594866417605,
+      "beta": 10177.038048773371,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4562289601738675
+    ],
+    "time_seconds": 1.5467274999991787
+  },
+  "2017-01-18_14:30:00-15:00:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.11459247794081609,
+      "alpha": 4951.211633192167,
+      "beta": 15070.86478768169,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3285287011027453
+    ],
+    "time_seconds": 1.5480145000001357
+  },
+  "2017-01-18_15:00:00-15:30:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1325778354439076,
+      "alpha": 50410.58943005757,
+      "beta": 103836.35485646945,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4854811159322661
+    ],
+    "time_seconds": 1.5749111000004632
+  },
+  "2017-01-18_15:30:00-16:00:00": {
+    "date": "2017-01-18",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2823986485056491,
+      "alpha": 11757.48394996012,
+      "beta": 21660.712898370162,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5428022616395419
+    ],
+    "time_seconds": 1.5240537000008771
+  },
+  "2017-01-19_10:00:00-10:30:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.19393138086526962,
+      "alpha": 11431.716230364125,
+      "beta": 32132.476871650822,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.35576828627393686
+    ],
+    "time_seconds": 1.890148999998928
+  },
+  "2017-01-19_10:30:00-11:00:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1608916135095233,
+      "alpha": 7163.701031418377,
+      "beta": 24350.067010278242,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.2941963579974772
+    ],
+    "time_seconds": 1.9276568999994197
+  },
+  "2017-01-19_11:00:00-11:30:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1651670083238613,
+      "alpha": 8953.523250234526,
+      "beta": 24380.581836996666,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3672399334066701
+    ],
+    "time_seconds": 1.9443395999987843
+  },
+  "2017-01-19_11:30:00-12:00:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1705936844683688,
+      "alpha": 53580.09024966519,
+      "beta": 120735.92552711038,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4437791818445469
+    ],
+    "time_seconds": 1.9342146999988472
+  },
+  "2017-01-19_12:00:00-12:30:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1188157968681888,
+      "alpha": 7987.61767963205,
+      "beta": 29201.626425279876,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.27353331500457667
+    ],
+    "time_seconds": 1.9849420999998983
+  },
+  "2017-01-19_12:30:00-13:00:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.06898599382521814,
+      "alpha": 4801.153291285675,
+      "beta": 27950.81694837691,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.17177148346515414
+    ],
+    "time_seconds": 1.9647138000000268
+  },
+  "2017-01-19_13:00:00-13:30:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.11012301581462255,
+      "alpha": 2519.1498284931827,
+      "beta": 4812.428204597045,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5234675139853056
+    ],
+    "time_seconds": 2.015280100000382
+  },
+  "2017-01-19_13:30:00-14:00:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.26569628903404297,
+      "alpha": 15043.878648348227,
+      "beta": 30436.793366060854,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.494266214821539
+    ],
+    "time_seconds": 1.9277120999995532
+  },
+  "2017-01-19_14:00:00-14:30:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.14979843584458163,
+      "alpha": 13718.554341858691,
+      "beta": 31549.320137478313,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.43482884201875527
+    ],
+    "time_seconds": 1.9481543999991118
+  },
+  "2017-01-19_14:30:00-15:00:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.3547682306827428,
+      "alpha": 10762.542196980374,
+      "beta": 20870.535740888718,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5156811655723256
+    ],
+    "time_seconds": 2.078923600000053
+  },
+  "2017-01-19_15:00:00-15:30:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.34268148165610246,
+      "alpha": 10139.687134317639,
+      "beta": 19560.55499996721,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5183742043277727
+    ],
+    "time_seconds": 1.9483718999999837
+  },
+  "2017-01-19_15:30:00-16:00:00": {
+    "date": "2017-01-19",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.27728930614542424,
+      "alpha": 10906.054965975018,
+      "beta": 25661.32232618191,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.42499972633318717
+    ],
+    "time_seconds": 2.0176959999989776
+  },
+  "2017-01-20_10:00:00-10:30:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.31780618591107135,
+      "alpha": 11793.76383454385,
+      "beta": 26082.96482161991,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4521634681946938
+    ],
+    "time_seconds": 1.994633199999953
+  },
+  "2017-01-20_10:30:00-11:00:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.26295731135947975,
+      "alpha": 16183.766150832538,
+      "beta": 32491.02004932549,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.49809966342280204
+    ],
+    "time_seconds": 2.049712300000465
+  },
+  "2017-01-20_11:00:00-11:30:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.16924935064083294,
+      "alpha": 7386.062589511562,
+      "beta": 23258.059409861304,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3175700284942908
+    ],
+    "time_seconds": 2.125995200000034
+  },
+  "2017-01-20_11:30:00-12:00:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 1.1217234743540767,
+      "alpha": 94828.4025269628,
+      "beta": 102368.16445524132,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.9263466140239807
+    ],
+    "time_seconds": 2.07842509999864
+  },
+  "2017-01-20_12:00:00-12:30:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1708215166394049,
+      "alpha": 13113.261846777543,
+      "beta": 31462.976210472083,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4167838973355911
+    ],
+    "time_seconds": 1.8979254999994737
+  },
+  "2017-01-20_12:30:00-13:00:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.14522149913576235,
+      "alpha": 9922.485223267315,
+      "beta": 23456.45232646627,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4230173039454745
+    ],
+    "time_seconds": 2.1486937000008766
+  },
+  "2017-01-20_13:00:00-13:30:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.15853322601824013,
+      "alpha": 10047.939007364488,
+      "beta": 23067.03448730192,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.43559734619964857
+    ],
+    "time_seconds": 2.159225299999889
+  },
+  "2017-01-20_13:30:00-14:00:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1599967326781692,
+      "alpha": 56462.51456490463,
+      "beta": 133449.8766600598,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4230990389652664
+    ],
+    "time_seconds": 2.0415699999994104
+  },
+  "2017-01-20_14:00:00-14:30:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.09005564162307056,
+      "alpha": 6296.40542392927,
+      "beta": 19892.130410702383,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.31652745552792433
+    ],
+    "time_seconds": 2.043049500000052
+  },
+  "2017-01-20_14:30:00-15:00:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.08509203180537873,
+      "alpha": 3546.9201446027555,
+      "beta": 6045.60828008664,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5866936758515761
+    ],
+    "time_seconds": 1.9618814000004932
+  },
+  "2017-01-20_15:00:00-15:30:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.15608522894829818,
+      "alpha": 14901.11499055043,
+      "beta": 32702.08378043546,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.455662553206021
+    ],
+    "time_seconds": 2.080719699999463
+  },
+  "2017-01-20_15:30:00-16:00:00": {
+    "date": "2017-01-20",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.6124636418582137,
+      "alpha": 27526.716329420262,
+      "beta": 38605.77838205255,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.7130206275601779
+    ],
+    "time_seconds": 2.201165399999809
+  },
+  "2017-01-23_10:00:00-10:30:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.32118311943209227,
+      "alpha": 17713.252565035866,
+      "beta": 34211.458075451534,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5177578963740814
+    ],
+    "time_seconds": 1.8398849000004702
+  },
+  "2017-01-23_10:30:00-11:00:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.24234140433951853,
+      "alpha": 15460.622209525118,
+      "beta": 36849.67122476784,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4195592985137284
+    ],
+    "time_seconds": 1.7272341000007145
+  },
+  "2017-01-23_11:00:00-11:30:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.143987684545217,
+      "alpha": 6863.373262418406,
+      "beta": 22998.02270527611,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.2984331892516933
+    ],
+    "time_seconds": 1.7286507999997411
+  },
+  "2017-01-23_11:30:00-12:00:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.17926417110215648,
+      "alpha": 10614.120256414217,
+      "beta": 28518.984089450718,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.37217736168731275
+    ],
+    "time_seconds": 1.7311589000000822
+  },
+  "2017-01-23_12:00:00-12:30:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1333366685184202,
+      "alpha": 23943.295585400345,
+      "beta": 57770.800096183266,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4144532453339209
+    ],
+    "time_seconds": 1.684711400001106
+  },
+  "2017-01-23_12:30:00-13:00:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.138791560374937,
+      "alpha": 15476.395832575989,
+      "beta": 36483.59767659747,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.42420147184397267
+    ],
+    "time_seconds": 1.6592694000009942
+  },
+  "2017-01-23_13:00:00-13:30:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.11021977292857069,
+      "alpha": 5378.896003966063,
+      "beta": 18050.304806180422,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.29799474644463236
+    ],
+    "time_seconds": 1.6483114999991813
+  },
+  "2017-01-23_13:30:00-14:00:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.17179431057784159,
+      "alpha": 65803.48827949243,
+      "beta": 146686.9227240747,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.44859819169614745
+    ],
+    "time_seconds": 1.6096687000008387
+  },
+  "2017-01-23_14:00:00-14:30:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.19477267234697565,
+      "alpha": 60820.80636410238,
+      "beta": 119004.6372662719,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5110792970866869
+    ],
+    "time_seconds": 1.6230897000004916
+  },
+  "2017-01-23_14:30:00-15:00:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.12303559145458817,
+      "alpha": 9984.05228934267,
+      "beta": 26549.594004690585,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.37605291770483423
+    ],
+    "time_seconds": 1.6244403999990027
+  },
+  "2017-01-23_15:00:00-15:30:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1549173586463033,
+      "alpha": 8350.989035015355,
+      "beta": 21042.44898721432,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.39686393157419697
+    ],
+    "time_seconds": 1.5965109000007942
+  },
+  "2017-01-23_15:30:00-16:00:00": {
+    "date": "2017-01-23",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.20916829215375748,
+      "alpha": 18566.11821094125,
+      "beta": 26655.854009308245,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.6965118508098802
+    ],
+    "time_seconds": 1.6032838999999512
+  },
+  "2017-01-24_10:00:00-10:30:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.21347072696751895,
+      "alpha": 51444.47710145613,
+      "beta": 130608.83092956079,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.39388207317467583
+    ],
+    "time_seconds": 1.4533035999993444
+  },
+  "2017-01-24_10:30:00-11:00:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.21089541208426466,
+      "alpha": 3195.071043284499,
+      "beta": 6863.190318269261,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4655372931710019
+    ],
+    "time_seconds": 1.4549328999983118
+  },
+  "2017-01-24_11:00:00-11:30:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.18998920042998205,
+      "alpha": 13606.098801365179,
+      "beta": 28879.98899589747,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4711254842686396
+    ],
+    "time_seconds": 1.3544849999998405
+  },
+  "2017-01-24_11:30:00-12:00:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.11896614659814124,
+      "alpha": 12180.55585126959,
+      "beta": 33766.97732561635,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3607239029366469
+    ],
+    "time_seconds": 1.4280331999998452
+  },
+  "2017-01-24_12:00:00-12:30:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.12122987350736,
+      "alpha": 12652.934761083829,
+      "beta": 32571.503131426958,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.38846640604914273
+    ],
+    "time_seconds": 1.3759365000005346
+  },
+  "2017-01-24_12:30:00-13:00:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.09793688879212264,
+      "alpha": 10895.46703484305,
+      "beta": 24760.4866017845,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.44003444722519336
+    ],
+    "time_seconds": 1.3954076999998506
+  },
+  "2017-01-24_13:00:00-13:30:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.09916995852209036,
+      "alpha": 8127.467264390214,
+      "beta": 17649.307926709906,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4604977882498362
+    ],
+    "time_seconds": 1.4108663000006345
+  },
+  "2017-01-24_13:30:00-14:00:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.06560336574456929,
+      "alpha": 5527.720812275784,
+      "beta": 10187.126889309537,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5426182349879851
+    ],
+    "time_seconds": 1.4936458000011044
+  },
+  "2017-01-24_14:00:00-14:30:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.0909167041699819,
+      "alpha": 7661.5336399337175,
+      "beta": 16625.20829307309,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.46083835491708713
+    ],
+    "time_seconds": 1.458882299999459
+  },
+  "2017-01-24_14:30:00-15:00:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.08455660360990942,
+      "alpha": 14115.496083409545,
+      "beta": 32459.83733890878,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4348603456028309
+    ],
+    "time_seconds": 1.4709032000009756
+  },
+  "2017-01-24_15:00:00-15:30:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1251837437238925,
+      "alpha": 21740.46130368813,
+      "beta": 41791.672548959265,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5202103667475623
+    ],
+    "time_seconds": 1.412304800000129
+  },
+  "2017-01-24_15:30:00-16:00:00": {
+    "date": "2017-01-24",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2584711752304545,
+      "alpha": 28810.013793177834,
+      "beta": 55348.79872075524,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.520517417885248
+    ],
+    "time_seconds": 1.405783700000029
+  },
+  "2017-01-25_10:00:00-10:30:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.24548495667016051,
+      "alpha": 9197.611073832686,
+      "beta": 21797.59132593394,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4219553865518031
+    ],
+    "time_seconds": 1.5575912999993307
+  },
+  "2017-01-25_10:30:00-11:00:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.23378143800840348,
+      "alpha": 18050.256378970174,
+      "beta": 32003.204171262423,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5640140369187961
+    ],
+    "time_seconds": 1.5180485999990196
+  },
+  "2017-01-25_11:00:00-11:30:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1683355700547289,
+      "alpha": 75314.42349333045,
+      "beta": 171585.9538431733,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4389311701012927
+    ],
+    "time_seconds": 1.5920255000000907
+  },
+  "2017-01-25_11:30:00-12:00:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.24774861726910302,
+      "alpha": 47386.91034772141,
+      "beta": 82850.82908589997,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.571954570286684
+    ],
+    "time_seconds": 1.564800499998455
+  },
+  "2017-01-25_12:00:00-12:30:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.17879534783905704,
+      "alpha": 13530.970071036716,
+      "beta": 33118.92551063486,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.40855703687282274
+    ],
+    "time_seconds": 1.5590453000004345
+  },
+  "2017-01-25_12:30:00-13:00:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.15697238689901796,
+      "alpha": 10356.70985741686,
+      "beta": 21982.027785188882,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4711444257383313
+    ],
+    "time_seconds": 1.6387477999996918
+  },
+  "2017-01-25_13:00:00-13:30:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1370412208914913,
+      "alpha": 54519.74439610751,
+      "beta": 141632.756024792,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3849373967316158
+    ],
+    "time_seconds": 1.5006809000005887
+  },
+  "2017-01-25_13:30:00-14:00:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.13634950724669825,
+      "alpha": 55585.96305029307,
+      "beta": 131791.75941077227,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4217711585216885
+    ],
+    "time_seconds": 1.5255870000000868
+  },
+  "2017-01-25_14:00:00-14:30:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.17691443124723613,
+      "alpha": 12475.701250922668,
+      "beta": 30037.75266199235,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4153340428396476
+    ],
+    "time_seconds": 1.4896234999996523
+  },
+  "2017-01-25_14:30:00-15:00:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.19245574872977486,
+      "alpha": 22631.60795620841,
+      "beta": 46158.27874885445,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.49030441709809375
+    ],
+    "time_seconds": 1.5321338000012474
+  },
+  "2017-01-25_15:00:00-15:30:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2755762416836449,
+      "alpha": 18139.95364460815,
+      "beta": 34551.107296616865,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5250180114020356
+    ],
+    "time_seconds": 1.5286649000008765
+  },
+  "2017-01-25_15:30:00-16:00:00": {
+    "date": "2017-01-25",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.35465611679041864,
+      "alpha": 24020.04902345495,
+      "beta": 49696.70331579512,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4833328454569873
+    ],
+    "time_seconds": 1.5311509999992268
+  },
+  "2017-01-26_10:00:00-10:30:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.39067724776540086,
+      "alpha": 16028.535250372468,
+      "beta": 32530.974215834158,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.49271611554045386
+    ],
+    "time_seconds": 1.7387197999996715
+  },
+  "2017-01-26_10:30:00-11:00:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.24853145978433908,
+      "alpha": 13079.090002164981,
+      "beta": 27651.080363977293,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.47300466491732057
+    ],
+    "time_seconds": 1.770257499998479
+  },
+  "2017-01-26_11:00:00-11:30:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.1771613986988448,
+      "alpha": 11183.662322349033,
+      "beta": 25219.302608503265,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.44345644667343836
+    ],
+    "time_seconds": 1.725854899999831
+  },
+  "2017-01-26_11:30:00-12:00:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1795028082316898,
+      "alpha": 51715.25836851433,
+      "beta": 118547.40401346756,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4362411711912243
+    ],
+    "time_seconds": 1.7285721999996895
+  },
+  "2017-01-26_12:00:00-12:30:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.15048899897275791,
+      "alpha": 33895.63456739282,
+      "beta": 96662.82064505156,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.35065844697268345
+    ],
+    "time_seconds": 1.7344599999996717
+  },
+  "2017-01-26_12:30:00-13:00:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.18138442995941348,
+      "alpha": 25082.59217133047,
+      "beta": 50970.34972997989,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4921016297554913
+    ],
+    "time_seconds": 1.7382140999998228
+  },
+  "2017-01-26_13:00:00-13:30:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.15530317441479868,
+      "alpha": 10225.842095275793,
+      "beta": 24644.515483145355,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4149337852581989
+    ],
+    "time_seconds": 1.7245633999991696
+  },
+  "2017-01-26_13:30:00-14:00:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1501011020944632,
+      "alpha": 10916.910041591218,
+      "beta": 24863.942264605612,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4390659343322112
+    ],
+    "time_seconds": 1.727231099999699
+  },
+  "2017-01-26_14:00:00-14:30:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2285831000716652,
+      "alpha": 18215.267753550157,
+      "beta": 32418.803243539976,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5618735403867776
+    ],
+    "time_seconds": 1.7490354999990814
+  },
+  "2017-01-26_14:30:00-15:00:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.21656601857085953,
+      "alpha": 17049.571482824296,
+      "beta": 34915.60347271872,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4883080854136164
+    ],
+    "time_seconds": 1.7697840000000724
+  },
+  "2017-01-26_15:00:00-15:30:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.19378521962663756,
+      "alpha": 11491.908419675608,
+      "beta": 26715.61658240715,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4301569602268995
+    ],
+    "time_seconds": 1.7183734999998705
+  },
+  "2017-01-26_15:30:00-16:00:00": {
+    "date": "2017-01-26",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.30921568226389273,
+      "alpha": 10876.110712067151,
+      "beta": 25947.661088904137,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.41915572562792747
+    ],
+    "time_seconds": 1.8202426999996533
+  },
+  "2017-01-27_10:00:00-10:30:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.37379185344841287,
+      "alpha": 6796.756837261545,
+      "beta": 13752.604342186392,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4942159803443451
+    ],
+    "time_seconds": 1.957949899999221
+  },
+  "2017-01-27_10:30:00-11:00:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2320764427422644,
+      "alpha": 40152.86435796471,
+      "beta": 78853.71942258197,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5092069803680791
+    ],
+    "time_seconds": 2.0087882000007085
+  },
+  "2017-01-27_11:00:00-11:30:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.21123961957811613,
+      "alpha": 17101.54679873279,
+      "beta": 32051.526375264464,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5335641928095751
+    ],
+    "time_seconds": 1.9699545999992552
+  },
+  "2017-01-27_11:30:00-12:00:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2621167223723174,
+      "alpha": 56419.799991539556,
+      "beta": 109314.737545539,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5161225399094597
+    ],
+    "time_seconds": 1.9960461999999097
+  },
+  "2017-01-27_12:00:00-12:30:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.20501715797695153,
+      "alpha": 11646.690195387644,
+      "beta": 23354.8990440977,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.49868296041001386
+    ],
+    "time_seconds": 1.941886100001284
+  },
+  "2017-01-27_12:30:00-13:00:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.16710375215967352,
+      "alpha": 9500.503411923355,
+      "beta": 18977.576958965932,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5006173039090143
+    ],
+    "time_seconds": 1.94719780000014
+  },
+  "2017-01-27_13:00:00-13:30:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.105424808374168,
+      "alpha": 8750.139309092425,
+      "beta": 22952.130553160376,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3812342949525259
+    ],
+    "time_seconds": 2.02274000000034
+  },
+  "2017-01-27_13:30:00-14:00:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.16055449145161194,
+      "alpha": 11579.715706064137,
+      "beta": 27078.453109246915,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.42763579069107993
+    ],
+    "time_seconds": 2.3822261999994225
+  },
+  "2017-01-27_14:00:00-14:30:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.18516981194772725,
+      "alpha": 6079.881889097049,
+      "beta": 11975.04947825508,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.507712464999599
+    ],
+    "time_seconds": 2.058199800001603
+  },
+  "2017-01-27_14:30:00-15:00:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.36809562029322174,
+      "alpha": 74726.93297251858,
+      "beta": 137182.42062158746,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5447267414725828
+    ],
+    "time_seconds": 2.0114807000009023
+  },
+  "2017-01-27_15:00:00-15:30:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.18322973966865722,
+      "alpha": 11212.477440956507,
+      "beta": 21464.921659713436,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5223628401123267
+    ],
+    "time_seconds": 2.063813900000241
+  },
+  "2017-01-27_15:30:00-16:00:00": {
+    "date": "2017-01-27",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.29763665408856094,
+      "alpha": 7942.459528826463,
+      "beta": 17855.45180489613,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4448198575769764
+    ],
+    "time_seconds": 2.1001015000001644
+  },
+  "2017-01-30_10:00:00-10:30:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.18297263329085584,
+      "alpha": 12644.321970997064,
+      "beta": 29241.516876799695,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.43240991991865874
+    ],
+    "time_seconds": 1.8517348000004858
+  },
+  "2017-01-30_10:30:00-11:00:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.15775140876636615,
+      "alpha": 1928.765684259616,
+      "beta": 4164.641925824891,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4631288160212202
+    ],
+    "time_seconds": 1.790213100000983
+  },
+  "2017-01-30_11:00:00-11:30:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.11763003052711729,
+      "alpha": 2348.3950909271107,
+      "beta": 4373.719099497339,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5369332226198537
+    ],
+    "time_seconds": 1.7994667999992089
+  },
+  "2017-01-30_11:30:00-12:00:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.09863784475438278,
+      "alpha": 1929.7676259849084,
+      "beta": 2934.4564238142734,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.6576235415609111
+    ],
+    "time_seconds": 1.8329907999996067
+  },
+  "2017-01-30_12:00:00-12:30:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.09977295877895975,
+      "alpha": 2066.499299099131,
+      "beta": 4887.151615565267,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4228432963932328
+    ],
+    "time_seconds": 1.6955754999999044
+  },
+  "2017-01-30_12:30:00-13:00:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.1308579438478392,
+      "alpha": 8924.972016416883,
+      "beta": 21913.673779198063,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.40727867478291424
+    ],
+    "time_seconds": 1.7487633000000642
+  },
+  "2017-01-30_13:00:00-13:30:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.11440298239511727,
+      "alpha": 2412.6954074549967,
+      "beta": 3998.547631273028,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.6033929391224635
+    ],
+    "time_seconds": 1.7839528000004066
+  },
+  "2017-01-30_13:30:00-14:00:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.10692789681824572,
+      "alpha": 2396.904944548369,
+      "beta": 4478.512613408489,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5352011150693492
+    ],
+    "time_seconds": 1.7700216000012006
+  },
+  "2017-01-30_14:00:00-14:30:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.12851137879148508,
+      "alpha": 8037.375519391112,
+      "beta": 15749.289576753437,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5103325759693054
+    ],
+    "time_seconds": 1.7299540999993042
+  },
+  "2017-01-30_14:30:00-15:00:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1127949969913699,
+      "alpha": 12974.151226918464,
+      "beta": 39973.6120454825,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3245678977460507
+    ],
+    "time_seconds": 1.7538098999993963
+  },
+  "2017-01-30_15:00:00-15:30:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.18311709052345315,
+      "alpha": 11781.106089525578,
+      "beta": 22306.492403066477,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5281469572466726
+    ],
+    "time_seconds": 1.7527823000000353
+  },
+  "2017-01-30_15:30:00-16:00:00": {
+    "date": "2017-01-30",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.3333019321113802,
+      "alpha": 4373.106903592351,
+      "beta": 7277.983023729607,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.6008679725322236
+    ],
+    "time_seconds": 1.697045099999741
+  },
+  "2017-01-31_10:00:00-10:30:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.3041753047521303,
+      "alpha": 8157.162823396844,
+      "beta": 15156.496411305352,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5381958073973053
+    ],
+    "time_seconds": 2.322256599998582
+  },
+  "2017-01-31_10:30:00-11:00:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2138831682646619,
+      "alpha": 12288.827514988034,
+      "beta": 27096.553814813735,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4535199420182248
+    ],
+    "time_seconds": 2.395807799999602
+  },
+  "2017-01-31_11:00:00-11:30:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.23215204839364337,
+      "alpha": 16033.926606018886,
+      "beta": 39417.78685274489,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4067688190084764
+    ],
+    "time_seconds": 2.328788099999656
+  },
+  "2017-01-31_11:30:00-12:00:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.21645646825769715,
+      "alpha": 10645.353116636818,
+      "beta": 25161.1359844157,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.42308714213977994
+    ],
+    "time_seconds": 2.344557200000054
+  },
+  "2017-01-31_12:00:00-12:30:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1950359386423629,
+      "alpha": 14654.887939007156,
+      "beta": 29519.18937059383,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4964529260957936
+    ],
+    "time_seconds": 2.3649863000009645
+  },
+  "2017-01-31_12:30:00-13:00:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1723427202787916,
+      "alpha": 8996.94546710883,
+      "beta": 16421.963299190702,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5478605269780509
+    ],
+    "time_seconds": 2.3232016999991174
+  },
+  "2017-01-31_13:00:00-13:30:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2145437127723196,
+      "alpha": 12689.403968058927,
+      "beta": 24193.219485043253,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5245024944242653
+    ],
+    "time_seconds": 2.434906599999522
+  },
+  "2017-01-31_13:30:00-14:00:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.24954720553201115,
+      "alpha": 6165.577085224147,
+      "beta": 10528.664704363258,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5855991484531772
+    ],
+    "time_seconds": 2.4561558999994304
+  },
+  "2017-01-31_14:00:00-14:30:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.15210182171211922,
+      "alpha": 6586.141667159915,
+      "beta": 17816.833234029076,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3696583775943293
+    ],
+    "time_seconds": 2.2984327000012854
+  },
+  "2017-01-31_14:30:00-15:00:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1958933015330368,
+      "alpha": 9651.28705004921,
+      "beta": 24496.073476331567,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.39399322750131416
+    ],
+    "time_seconds": 2.296849199999997
+  },
+  "2017-01-31_15:00:00-15:30:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.17130187855442483,
+      "alpha": 8928.327511652371,
+      "beta": 24679.314133125037,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.3617737293464166
+    ],
+    "time_seconds": 2.288238699999056
+  },
+  "2017-01-31_15:30:00-16:00:00": {
+    "date": "2017-01-31",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.299925251258889,
+      "alpha": 8447.700632556873,
+      "beta": 17717.971683523483,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.47678711668856905
+    ],
+    "time_seconds": 2.3504443999991054
+  },
+  "2017-02-01_10:00:00-10:30:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "10:00:00",
+      "10:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.23612237806117473,
+      "alpha": 5049.269730484489,
+      "beta": 9615.847616608155,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5250987673477236
+    ],
+    "time_seconds": 1.9647678000001179
+  },
+  "2017-02-01_10:30:00-11:00:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "10:30:00",
+      "11:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.20292317550568875,
+      "alpha": 2138.302515961348,
+      "beta": 3585.6199724994312,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5963550327032565
+    ],
+    "time_seconds": 2.0433103000013944
+  },
+  "2017-02-01_11:00:00-11:30:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "11:00:00",
+      "11:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.1549122687236518,
+      "alpha": 11705.281598210559,
+      "beta": 27353.41308075475,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4279276433859778
+    ],
+    "time_seconds": 2.0025987999997596
+  },
+  "2017-02-01_11:30:00-12:00:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "11:30:00",
+      "12:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.14103140007350873,
+      "alpha": 8579.203745525909,
+      "beta": 23660.445196243774,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.36259688583069877
+    ],
+    "time_seconds": 2.0384545999986585
+  },
+  "2017-02-01_12:00:00-12:30:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "12:00:00",
+      "12:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.09289195523909356,
+      "alpha": 13427.469001858328,
+      "beta": 31700.132563593834,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.42357769245669236
+    ],
+    "time_seconds": 2.012201899999127
+  },
+  "2017-02-01_12:30:00-13:00:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "12:30:00",
+      "13:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.09930966625051392,
+      "alpha": 8197.05981038613,
+      "beta": 31955.999961960442,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.2565108217594095
+    ],
+    "time_seconds": 2.025523799999064
+  },
+  "2017-02-01_13:00:00-13:30:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "13:00:00",
+      "13:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.14262033572578106,
+      "alpha": 6672.322746856317,
+      "beta": 22707.284374707993,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.2938406300265538
+    ],
+    "time_seconds": 2.0158025000000634
+  },
+  "2017-02-01_13:30:00-14:00:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "13:30:00",
+      "14:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.11192149625415194,
+      "alpha": 13804.486308998481,
+      "beta": 32804.010311472986,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.4208170335859958
+    ],
+    "time_seconds": 2.003467600001386
+  },
+  "2017-02-01_14:00:00-14:30:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "14:00:00",
+      "14:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": true,
+    "CvM": true,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2561295685038735,
+      "alpha": 11899.828709690211,
+      "beta": 21620.98526334278,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5503832764673187
+    ],
+    "time_seconds": 1.9863168000010774
+  },
+  "2017-02-01_14:30:00-15:00:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "14:30:00",
+      "15:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.19811707377265353,
+      "alpha": 9515.895964215795,
+      "beta": 19364.625811112615,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.491406136996202
+    ],
+    "time_seconds": 1.9893093000009685
+  },
+  "2017-02-01_15:00:00-15:30:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "15:00:00",
+      "15:30:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": true,
+    "estimated_params": {
+      "mu": 0.2186804062695275,
+      "alpha": 14053.090320440626,
+      "beta": 24972.764326301913,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5627366733141183
+    ],
+    "time_seconds": 1.9976986000001489
+  },
+  "2017-02-01_15:30:00-16:00:00": {
+    "date": "2017-02-01",
+    "interval": [
+      "15:30:00",
+      "16:00:00"
+    ],
+    "H0": "exp",
+    "method": "khmaladze",
+    "alpha_level": 0.05,
+    "KS": false,
+    "CvM": false,
+    "AD": false,
+    "estimated_params": {
+      "mu": 0.2695421111853375,
+      "alpha": 10914.53782981869,
+      "beta": 19569.668676094767,
+      "T": 1800.0
+    },
+    "branching_ratios": [
+      0.5577272671535461
+    ],
+    "time_seconds": 2.044482000001153
+  }
+}

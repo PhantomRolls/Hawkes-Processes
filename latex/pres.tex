@@ -1,0 +1,284 @@
+\documentclass[10pt]{beamer}
+
+% --------------------
+% Theme
+% --------------------
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+
+% --------------------
+% Packages
+% --------------------
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% --------------------
+% Title info
+% --------------------
+\title[GOF for Hawkes]{Goodness-of-Fit Testing for Hawkes Processes}
+\subtitle{Reproduction and Application of an Asymptotically Distribution-Free Test}
+\author{Adrien Damez \and Arnaud Van de Velde \and Elena Perotti \\ Angelo Picerno \and Gavriil Kharkhodine}
+\institute{Project P15 — Hawkes Processes}
+\date{January 2026}
+
+% ============================================================
+\begin{document}
+
+% ------------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Motivation}
+\begin{itemize}
+  \item Hawkes processes are standard for \textbf{self-exciting event data}
+  \item Widely used in:
+  \begin{itemize}
+    \item High-frequency finance
+    \item Seismology, epidemiology, social networks
+  \end{itemize}
+  \item \alert{Key question}: how to assess whether a fitted Hawkes model is adequate?
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Classical Goodness-of-Fit}
+\begin{itemize}
+  \item Standard approach: \textbf{Random Time Change (RTC)}
+  \[
+  \tau_i = \int_0^{t_i} \lambda_{\hat\theta}(s)\,ds
+  \]
+  \item Under the true model: transformed inter-arrival times $\sim \text{Exp}(1)$
+  \item In practice:
+  \begin{itemize}
+    \item Parameters unknown
+    \item Plug-in estimation error ignored
+  \end{itemize}
+  \item \alert{Consequence}: tests may be badly sized or overly sensitive
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Main Idea of the Project}
+\begin{block}{Reference}
+Baars, Can \& Laeven (2025)
+\end{block}
+
+\begin{itemize}
+  \item Propose an \textbf{asymptotically distribution-free} GOF test
+  \item Explicitly accounts for:
+  \begin{itemize}
+    \item Parameter estimation uncertainty
+  \end{itemize}
+  \item Based on a \textbf{martingale transformation}
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Our goals}:
+\begin{itemize}
+  \item Reproduce their results for Hawkes processes
+  \item Compare with naive and RTC-based procedures
+  \item Apply to real high-frequency financial data
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Hawkes Process Model}
+\[
+\lambda_\theta(t) = \mu + \sum_{t_i < t} g_\theta(t - t_i)
+\]
+
+\begin{itemize}
+  \item $\mu > 0$: baseline intensity (constant)
+  \item $g_\theta$: excitation kernel
+  \item Stationarity condition:
+  \[
+  \int_0^\infty g_\theta(s)\,ds < 1
+  \]
+\end{itemize}
+
+\textbf{Kernels considered}:
+\begin{itemize}
+  \item Exponential
+  \item Power-law
+  \item Multi-exponential
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Parameter Estimation}
+\begin{itemize}
+  \item Parameters estimated by \textbf{Maximum Likelihood}
+  \[
+  \ell_T(\theta) = \sum_{i=1}^{N(T)} \log \lambda_\theta(t_i)
+  - \int_0^T \lambda_\theta(t)\,dt
+  \]
+  \item Efficient recursion for exponential / multi-exponential kernels
+  \item Power-law kernel: higher computational cost
+\end{itemize}
+
+\vspace{0.2cm}
+\alert{Important}: treating $\hat\theta$ as fixed can distort GOF tests
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Goodness-of-Fit Procedures Compared}
+\begin{enumerate}
+  \item \textbf{Naive compensated process}
+  \item \textbf{Transformation-based procedure} (Baars et al.)
+  \item \textbf{Naive Random Time Change (RTC)}
+\end{enumerate}
+
+\vspace{0.2cm}
+All tests use classical statistics:
+\begin{itemize}
+  \item Kolmogorov–Smirnov
+  \item Cramér–von Mises
+  \item Anderson–Darling
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Transformation-Based Test (Key Idea)}
+\begin{itemize}
+  \item Start from the compensated empirical process
+  \[
+  \eta_T(u) = \frac{1}{\sqrt{T}}
+  \left(
+  N(uT) - \int_0^{uT} \lambda_{\hat\theta}(s)\,ds
+  \right)
+  \]
+  \item Apply a transformation that removes estimation effects
+  \item Obtain increments that are asymptotically i.i.d. $\mathcal N(0,1)$
+\end{itemize}
+
+\begin{block}{Key advantage}
+Asymptotic distribution does \textbf{not depend} on $\theta$
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Simulation Study}
+\begin{itemize}
+  \item Hawkes processes simulated under the null
+  \item Same setup as Baars et al. (2025)
+  \item $T = 5000$, 500 Monte Carlo replications
+  \item Compare rejection frequencies at 1\%, 5\%, 20\%
+\end{itemize}
+
+\vspace{0.2cm}
+Models tested:
+\begin{itemize}
+  \item Correct specification
+  \item Misspecified kernels
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Simulation Results — Main Message}
+\begin{itemize}
+  \item \textbf{Transformation-based test}
+  \begin{itemize}
+    \item Correctly sized under the null
+    \item Robust across kernel families
+  \end{itemize}
+  \item \textbf{Naive test}
+  \begin{itemize}
+    \item Strongly conservative
+  \end{itemize}
+  \item \textbf{Naive RTC}
+  \begin{itemize}
+    \item Undersized under the null
+    \item Rejects aggressively under misspecification
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Application to Real Data}
+\begin{itemize}
+  \item High-frequency trade data (Société Générale)
+  \item 12 trading days, 9:00–17:30
+  \item Data split into \textbf{one-hour windows}
+  \item Baseline intensity assumed locally constant
+\end{itemize}
+
+\textbf{Model used}: multi-exponential Hawkes
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Estimation Strategy on Real Data}
+\begin{itemize}
+  \item Full MLE unstable for multi-exponential kernels
+  \item Adopt a \textbf{two-step approach}:
+  \begin{enumerate}
+    \item Estimate decay parameters via GMM on inter-arrival times
+    \item Fix decay rates and estimate remaining parameters
+  \end{enumerate}
+  \item Improves numerical stability
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Empirical GOF Results}
+\begin{itemize}
+  \item Transformation-based test:
+  \begin{itemize}
+    \item Rejects more than naive test
+    \item Provides a sensitive diagnostic
+  \end{itemize}
+  \item Naive RTC:
+  \begin{itemize}
+    \item Rejects almost systematically
+    \item Extremely sensitive to plug-in estimation
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Why Does RTC Fail?}
+\begin{itemize}
+  \item Q–Q plots of RTC-transformed inter-arrival times
+  \item On simulated data: close to Exp(1)
+  \item On real data:
+  \begin{itemize}
+    \item Global deviations from exponentiality
+    \item Not only tail effects
+  \end{itemize}
+\end{itemize}
+
+\begin{block}{Interpretation}
+RTC amplifies mild misspecification + estimation error
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Conclusion}
+\begin{itemize}
+  \item Accounting for parameter estimation is \textbf{crucial}
+  \item Transformation-based GOF:
+  \begin{itemize}
+    \item Correctly sized
+    \item Interpretable on real data
+  \end{itemize}
+  \item Naive RTC can be misleading in practice
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Takeaway}: GOF tests should be used as \alert{diagnostic tools}, not mechanical decisions
+\end{frame}
+
+% ------------------------------------------------------------
+\begin{frame}{Perspectives}
+\begin{itemize}
+  \item Data-driven choice of $(n, \tau)$
+  \item Time-varying baseline intensities
+  \item Multivariate Hawkes processes
+  \item Estimation-aware alternatives to RTC
+\end{itemize}
+\end{frame}
+
+\end{document}

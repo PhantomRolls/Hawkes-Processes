@@ -41,7 +41,6 @@ def monte_carlo_real(dates, intervals, method, H0, alpha_level=0.05, J=None,
                 "time_seconds": t1 - t0,
             }
             key = f"{date}_{start}-{end}"
-            # Save to json
             save_params_json(key, result, json_path=json_path)
             
     
